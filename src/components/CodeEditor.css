@@ -1,0 +1,12 @@
+.code-editor-container {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+  }
+  
+  .react-simple-code-editor {
+    font-family: 'Fira Code', monospace;
+    font-size: 14px;
+  }
+  

@@ -10,9 +10,8 @@ function NavigationBar() {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link as={Link} to="/">Dashboard</Nav.Link>
-          <Nav.Link as={Link} to="/weather">Weather</Nav.Link>
-          <Nav.Link as={Link} to="/news">News</Nav.Link>
-          <Nav.Link as={Link} to="/events">Events</Nav.Link>
+          <Nav.Link as={Link} to="/challenges">Challenges</Nav.Link>
+          <Nav.Link as={Link} to="/profile">Profile</Nav.Link>
           <Nav.Link as={Link} to="/login">Login</Nav.Link>
         </Nav>
       </Navbar.Collapse>
