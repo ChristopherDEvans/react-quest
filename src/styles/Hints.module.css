@@ -1,0 +1,21 @@
+.hintsContainer {
+    margin: 20px 0;
+  }
+  
+  .hintItem {
+    margin: 5px 0;
+    cursor: pointer;
+    color: #66fcf1;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #1f2833;
+    border: 1px solid #45a29e;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hintItem:hover {
+    background-color: #45a29e;
+    color: #1f2833;
+  }
+  

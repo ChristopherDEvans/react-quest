@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { AuthProvider } from './context/AuthContext';
+import { DataProvider } from './context/DataContext';
+import Dashboard from './components/Dashboard';
+import Weather from './components/Weather';
+import News from './components/News';
+import Events from './components/Events';
+import LoginPage from './components/LoginPage';
+import NavigationBar from './components/NavigationBar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AuthProvider>
+      <DataProvider>
+        <Router>
+          <div>
+            <NavigationBar />
+            <Routes>
+              <Route path="/" element={<Dashboard />} />
+              <Route path="/weather" element={<Weather />} />
+              <Route path="/news" element={<News />} />
+              <Route path="/events" element={<Events />} />
+              <Route path="/login" element={<LoginPage />} />
+            </Routes>
+          </div>
+        </Router>
+      </DataProvider>
+    </AuthProvider>
   );
 }
 

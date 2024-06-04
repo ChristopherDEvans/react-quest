@@ -1,0 +1,37 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 20px;
+}
+
+.h2 {
+  color: #66fcf1;
+}
+
+.section {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px 0;
+  border: 1px solid #45a29e;
+  border-radius: 8px;
+  background-color: #0b0c10;
+  color: #66fcf1;
+}
+
+.section h2 {
+  background-color: #1f2833;
+  padding: 10px;
+  margin: 0;
+  border-bottom: 1px solid #45a29e;
+}
+
+.section-content {
+  padding: 20px;
+}
+
+.loader {
+  color: #45a29e;
+}

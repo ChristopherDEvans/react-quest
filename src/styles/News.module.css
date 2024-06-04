@@ -1,0 +1,23 @@
+.news {
+    background-color: #0b0c10;
+    border: 1px solid #45a29e;
+    border-radius: 8px;
+    padding: 20px;
+    color: #c5c6c7;
+  }
+  
+  .news h1 {
+    color: #66fcf1;
+  }
+  
+  .newsItem {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #45a29e;
+    transition: background-color 0.3s ease;
+  }
+  
+  .newsItem:hover {
+    background-color: #1f2833;
+  }
+  
